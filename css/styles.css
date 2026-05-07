@@ -4,22 +4,22 @@
    
    Author:  Shayla Thompson
    Date:  04/07/2026 
-   
-  
-
 */
 
+/* ===== GLOBAL RESET ===== */
 * {
     margin: 0; 
     padding: 0;
 }
 
+/* ===== BODY ===== */
 body {
     font-size: 1.1em;
     font-family: Arial, Helvetica, sans-serif;
-	background-color: rgb(255, 255, 204); 
+    background-color: rgb(255, 255, 204); 
 }
 
+/* ===== MAIN LAYOUT ===== */
 #container {
     width: 930px;
     border-width: 1px;
@@ -27,9 +27,16 @@ body {
     background-color: rgb(255, 218, 179);
 }
 
+#wrapper {
+    width: 930px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-radius: 25px;
+}
 
+/* ===== HEADER ===== */
 header {
-    width: 910px;	/* reduced by 20px to accommodate shadow */
+    width: 910px;
     margin-bottom: 30px;
     margin-top: 10px;
     text-align: center;
@@ -38,6 +45,7 @@ header {
     border-radius: 25px;  	
 }
 
+/* ===== NAVIGATION ===== */
 nav {
     width: 200px;
     margin: 0 5px 0 5px; 
@@ -55,7 +63,7 @@ nav ul li a {
     padding: 5px;
     color: black;
     text-decoration: none;
-    display:block;
+    display: block;
 }
 
 nav ul li a:hover {
@@ -64,6 +72,7 @@ nav ul li a:hover {
     color: white;
 }
 
+/* ===== MAIN CONTENT ===== */
 #main {
     width: 446px;
     padding: 10px;
@@ -78,15 +87,7 @@ nav ul li a:hover {
     text-indent: 1.5em;
 }
 
-figure{
-    padding-top: 10px;
-    text-align: center;
-}
-
-figcaption {
-    font-style: italic;
-}
-
+/* ===== SIDEBAR ===== */
 aside {
     width: 200px;
     margin: 0 5px 0 5px;
@@ -99,6 +100,17 @@ aside p {
     font-size: 0.9em;
 }
 
+/* ===== FIGURES ===== */
+figure {
+    padding-top: 10px;
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+/* ===== HEADINGS ===== */
 h2 {
     font-size: 1.4em;
     text-align: center;
@@ -111,6 +123,7 @@ h3 {
     padding-top: 0.5em;
 }
 
+/* ===== FOOTER ===== */
 footer {
     width: 910px;
     margin: 0;
@@ -120,16 +133,11 @@ footer {
     color: wheat;
     font-weight: bold;
     text-align: center;
-	border-bottom-left-radius: 25px;
-	border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
-#wrapper {
-    width: 930px;
-    margin-bottom: 10px;
-    border: 2px solid;
-    border-radius: 25px;
-}/* navigation for footer */
+/* Footer links */
 footer a:link {
     color: white;
     text-decoration: none;
@@ -137,10 +145,130 @@ footer a:link {
 
 footer a:visited {
     color: white;
-    background-color: white;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* ===== CONTACT FORM ===== */
+.form-title {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.form-subtext {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #0d8aa8;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0b6f87;
+}
+
+/* ===== SERVICES PAGE ===== */
+.pricing-title {
+    text-align: center;
+}
+
+.pricing-table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 60%;
+    text-align: center;
+}
+
+.pricing-table th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f3d2;
+}
+
+.pricing-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.alt-row {
+    background-color: #f2f2f2;
+}
+
+/* ===== VIDEO (IMAGE LINK VERSION) ===== */
+.video-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.video-link img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.video-link p {
+    margin-top: 8px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ===== REVIEWS PAGE ===== */
+.review-box {
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    width: 90%;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+.review-box h3 {
+    text-align: left;
+}
+
+.review-box p {
+    text-indent: 0;
 }
